@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/myeong/workspace/tbob/conf/routes
-// @DATE:Sat Feb 27 13:30:05 KST 2016
+// @DATE:Sat Mar 05 07:26:08 KST 2016
 
 package router
 

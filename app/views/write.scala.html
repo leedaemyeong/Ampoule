@@ -1,5 +1,5 @@
-@(str: String)(implicit messages: Messages)
+@(user: UserData)(implicit messages: Messages)
 
-main("show me the money!!"){
-	str
+@main2("show me the money!!"){
+	@user.username	
 }

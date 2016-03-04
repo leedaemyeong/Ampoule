@@ -10,22 +10,25 @@ import play.api.data.Forms._
 
 case class UserData(username: String)
 
-val userForm = Form(
-	mapping(
-		"username" -> text,
-	)(UserData.apply)(UserData.unapply)
-)
-
 class Test @Inject() (val messagesApi: MessagesApi)
   extends Controller with I18nSupport {
 
+	val userForm = Form(
+		mapping(
+			"username" -> text
+		)(UserData.apply)(UserData.unapply)
+	)
+
   def index = Action {
-    Ok(views.html.writeform())
+    Ok(views.html.writeform(userForm))
   }
 
   def write = Action (parse.text){ implicit request =>
-    Ok(views.html.write(request.body))
-    //Ok("hello" + request.body)
+		val userData = userForm.bindFromRequest.get
+	  
+    //Ok(views.html.write(userData))
+		//Ok(userData.username)
+		Ok("Hello")
   }
 
 }
