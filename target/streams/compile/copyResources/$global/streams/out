@@ -1,0 +1,9 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/home/myeong/workspace/tbob/conf/messages.ko,/home/myeong/workspace/tbob/target/scala-2.11/classes/messages.ko)[0m
+[0m[[0mdebug[0m] [0m	(/home/myeong/workspace/tbob/conf/application.conf,/home/myeong/workspace/tbob/target/scala-2.11/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/myeong/workspace/tbob/conf/evolutions,/home/myeong/workspace/tbob/target/scala-2.11/classes/evolutions)[0m
+[0m[[0mdebug[0m] [0m	(/home/myeong/workspace/tbob/conf/logback.xml,/home/myeong/workspace/tbob/target/scala-2.11/classes/logback.xml)[0m
+[0m[[0mdebug[0m] [0m	(/home/myeong/workspace/tbob/conf/routes,/home/myeong/workspace/tbob/target/scala-2.11/classes/routes)[0m
+[0m[[0mdebug[0m] [0m	(/home/myeong/workspace/tbob/conf/messages,/home/myeong/workspace/tbob/target/scala-2.11/classes/messages)[0m
+[0m[[0mdebug[0m] [0m	(/home/myeong/workspace/tbob/conf/evolutions/default,/home/myeong/workspace/tbob/target/scala-2.11/classes/evolutions/default)[0m
+[0m[[0mdebug[0m] [0m	(/home/myeong/workspace/tbob/conf/evolutions/default/1.sql,/home/myeong/workspace/tbob/target/scala-2.11/classes/evolutions/default/1.sql)[0m

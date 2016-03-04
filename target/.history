@@ -1,0 +1,28 @@
+eclipse with-source=true
+run
+~run
+exit
+run
+exit
+eclipse with-source=true
+eclipse
+run
+~run
+exit
+~run
+exit
+~run
+exit
+~run
+exit
+~run
+exit
+~run
+exit
+~run
+exit
+~run
+exit
+~run
+exit
+~run
