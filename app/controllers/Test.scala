@@ -23,12 +23,12 @@ class Test @Inject() (val messagesApi: MessagesApi)
     Ok(views.html.writeform(userForm))
   }
 
-  def write = Action (parse.text){ implicit request =>
+  def write = Action { implicit request =>
 		val userData = userForm.bindFromRequest.get
 	  
-    //Ok(views.html.write(userData))
+    Ok(views.html.write(userData))
 		//Ok(userData.username)
-		Ok("Hello")
+		//Ok("Hello")
   }
 
 }

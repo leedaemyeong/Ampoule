@@ -4,7 +4,7 @@
 		module="tbob-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20160305000252"
+		publication="20160305133535"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>
