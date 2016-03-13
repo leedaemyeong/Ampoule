@@ -71,3 +71,13 @@ exit
 ~run
 exot
 exit
+~run
+help
+reload
+~run
+reload
+~run
+reload
+~run
+exit
+~run
