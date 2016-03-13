@@ -7,12 +7,15 @@ lazy val root = (project in file(".")).enablePlugins(PlayScala)
 scalaVersion := "2.11.6"
 
 libraryDependencies ++= Seq(
-  jdbc,
+  //jdbc,
   cache,
   ws,
   specs2 % Test,
 	"org.webjars" % "bootstrap" % "3.3.6",
 	"mysql" % "mysql-connector-java" % "5.1.34",
+	"com.typesafe.play" %% "play-slick" % "1.1.1",
+	"com.typesafe.play" %% "play-slick-evolutions" % "1.1.1",
+	"com.typesafe.play" %% "anorm" % "2.4.0",
 	evolutions
 )
 

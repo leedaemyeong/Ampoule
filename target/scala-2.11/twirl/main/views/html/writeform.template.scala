@@ -61,7 +61,7 @@ Seq[Any](format.raw/*1.57*/("""
 object writeform extends writeform_Scope0.writeform
               /*
                   -- GENERATED --
-                  DATE: Sat Mar 05 14:31:23 KST 2016
+                  DATE: Mon Mar 07 19:53:23 KST 2016
                   SOURCE: /home/myeong/workspace/tbob/app/views/writeform.scala.html
                   HASH: ed1697b3862454a38a0a15c05e452e510ee7b448
                   MATRIX: 552->1|721->56|749->79|776->81|821->118|860->120|888->122|920->129|933->135|972->166|1011->168|1039->171|1052->177|1104->209|1132->211|1199->248|1228->250|1434->426

@@ -4,7 +4,7 @@
 		module="tbob_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20160305135551"
+		publication="20160307193637"
 	>
 		<description>
 		tbob
@@ -39,12 +39,14 @@
 		<dependency org="com.typesafe.play" name="play-test_2.11" rev="2.4.6" conf="test->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-omnidoc_2.11" rev="2.4.6" conf="docs->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-netty-server_2.11" rev="2.4.6" conf="compile->default(compile)"/>
-		<dependency org="com.typesafe.play" name="play-jdbc_2.11" rev="2.4.6" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-cache_2.11" rev="2.4.6" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-ws_2.11" rev="2.4.6" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-specs2_2.11" rev="2.4.6" conf="test->default(compile)"/>
 		<dependency org="org.webjars" name="bootstrap" rev="3.3.6" conf="compile->default(compile)"/>
 		<dependency org="mysql" name="mysql-connector-java" rev="5.1.34" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-slick_2.11" rev="1.1.1" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-slick-evolutions_2.11" rev="1.1.1" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="anorm_2.11" rev="2.4.0" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-jdbc-evolutions_2.11" rev="2.4.6" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>
