@@ -4,10 +4,10 @@
 
 # Home page
 GET     /                           controllers.Application.index
-
-# form test
-GET     /test                       controllers.Test.index
-POST    /test/write                 controllers.Test.write
+GET     /shop                       controllers.Application.shop
+GET     /blog                       controllers.Application.blog
+GET     /learn                      controllers.Application.learn
+GET     /videos                     controllers.Application.videos
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/myeong/workspace/tbob/conf/routes
-// @DATE:Sat Mar 05 07:26:08 KST 2016
+// @DATE:Sun Mar 13 01:25:06 KST 2016
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -13,36 +13,6 @@ import _root_.controllers.Assets.Asset
 // @LINE:6
 package controllers.javascript {
   import ReverseRouteContext.empty
-
-  // @LINE:9
-  class ReverseTest(_prefix: => String) {
-
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:10
-    def write: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Test.write",
-      """
-        function() {
-          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "test/write"})
-        }
-      """
-    )
-  
-    // @LINE:9
-    def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Test.index",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "test"})
-        }
-      """
-    )
-  
-  }
 
   // @LINE:13
   class ReverseAssets(_prefix: => String) {
@@ -71,6 +41,46 @@ package controllers.javascript {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
+  
+    // @LINE:8
+    def blog: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.blog",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "blog"})
+        }
+      """
+    )
+  
+    // @LINE:10
+    def videos: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.videos",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "videos"})
+        }
+      """
+    )
+  
+    // @LINE:7
+    def shop: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.shop",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "shop"})
+        }
+      """
+    )
+  
+    // @LINE:9
+    def learn: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.learn",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "learn"})
+        }
+      """
+    )
   
     // @LINE:6
     def index: JavaScriptReverseRoute = JavaScriptReverseRoute(

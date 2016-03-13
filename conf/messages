@@ -1,1 +1,14 @@
-test = TEST
+project.name = tBOB [tiba:b]
+
+main.oneLineAd = New paradigm of Internet shopping!! tBOB!!
+
+main.topnav.shop = SHOP
+main.topnav.blog = BLOG
+main.topnav.learn = LEARN
+main.topnav.videos = VIDEOS
+
+main.signin = Sign In
+main.signout = Sign Out
+main.wishlists = Wishlists
+main.cart = Shopping Cart
+main.account = My Account

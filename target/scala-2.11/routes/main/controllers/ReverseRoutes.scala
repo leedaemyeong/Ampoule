@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/myeong/workspace/tbob/conf/routes
-// @DATE:Sat Mar 05 07:26:08 KST 2016
+// @DATE:Sun Mar 13 01:25:06 KST 2016
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -11,27 +11,6 @@ import _root_.controllers.Assets.Asset
 
 // @LINE:6
 package controllers {
-
-  // @LINE:9
-  class ReverseTest(_prefix: => String) {
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:10
-    def write(): Call = {
-      import ReverseRouteContext.empty
-      Call("POST", _prefix + { _defaultPrefix } + "test/write")
-    }
-  
-    // @LINE:9
-    def index(): Call = {
-      import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "test")
-    }
-  
-  }
 
   // @LINE:13
   class ReverseAssets(_prefix: => String) {
@@ -54,6 +33,30 @@ package controllers {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
+  
+    // @LINE:8
+    def blog(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "blog")
+    }
+  
+    // @LINE:10
+    def videos(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "videos")
+    }
+  
+    // @LINE:7
+    def shop(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "shop")
+    }
+  
+    // @LINE:9
+    def learn(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "learn")
+    }
   
     // @LINE:6
     def index(): Call = {
