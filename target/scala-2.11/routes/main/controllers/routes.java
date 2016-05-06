@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/myeong/workspace/tbob/conf/routes
-// @DATE:Sun Mar 13 01:25:06 KST 2016
+// @SOURCE:/home/myeong/workspace/ampoule/conf/routes
+// @DATE:Sat May 07 06:08:32 KST 2016
 
 package controllers;
 

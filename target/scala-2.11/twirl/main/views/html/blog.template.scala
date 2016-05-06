@@ -49,8 +49,8 @@ Seq[Any](format.raw/*1.33*/("""
 object blog extends blog_Scope0.blog
               /*
                   -- GENERATED --
-                  DATE: Sun Mar 13 01:27:20 KST 2016
-                  SOURCE: /home/myeong/workspace/tbob/app/views/blog.scala.html
+                  DATE: Sat May 07 06:08:32 KST 2016
+                  SOURCE: /home/myeong/workspace/ampoule/app/views/blog.scala.html
                   HASH: 96f6f7ad5292de5eba7cb8191619fe0d816c68e1
                   MATRIX: 527->1|653->32|681->35|733->79|772->81|804->87|840->94
                   LINES: 20->1|25->1|27->3|27->3|27->3|29->5|31->7

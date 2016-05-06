@@ -1,4 +1,4 @@
-name := """tbob"""
+name := """Ampoule"""
 
 version := "1.0-SNAPSHOT"
 
@@ -30,3 +30,6 @@ routesGenerator := InjectedRoutesGenerator
 EclipseKeys.preTasks := Seq(compile in Compile)
 
 includeFilter in (Assets, LessKeys.less) := "*.less"
+
+
+fork in run := true

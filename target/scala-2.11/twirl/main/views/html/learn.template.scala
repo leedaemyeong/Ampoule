@@ -49,8 +49,8 @@ Seq[Any](format.raw/*1.33*/("""
 object learn extends learn_Scope0.learn
               /*
                   -- GENERATED --
-                  DATE: Sun Mar 13 01:27:20 KST 2016
-                  SOURCE: /home/myeong/workspace/tbob/app/views/learn.scala.html
+                  DATE: Sat May 07 06:08:32 KST 2016
+                  SOURCE: /home/myeong/workspace/ampoule/app/views/learn.scala.html
                   HASH: 0c18901dc56a29424464e86e157ee7fbc6694f47
                   MATRIX: 529->1|655->32|683->35|736->80|775->82|807->88|843->95
                   LINES: 20->1|25->1|27->3|27->3|27->3|29->5|31->7

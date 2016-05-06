@@ -49,8 +49,8 @@ Seq[Any](format.raw/*1.33*/("""
 object shop extends shop_Scope0.shop
               /*
                   -- GENERATED --
-                  DATE: Sun Mar 13 01:26:48 KST 2016
-                  SOURCE: /home/myeong/workspace/tbob/app/views/shop.scala.html
+                  DATE: Sat May 07 06:08:32 KST 2016
+                  SOURCE: /home/myeong/workspace/ampoule/app/views/shop.scala.html
                   HASH: 1d1f360772b40fa3acbad8a2dd6800fe019eb5bf
                   MATRIX: 527->1|653->32|681->35|733->79|772->81|804->87|840->94
                   LINES: 20->1|25->1|27->3|27->3|27->3|29->5|31->7

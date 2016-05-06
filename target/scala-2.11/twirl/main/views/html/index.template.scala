@@ -100,8 +100,8 @@ Seq[Any](format.raw/*1.33*/("""
 object index extends index_Scope0.index
               /*
                   -- GENERATED --
-                  DATE: Sun Mar 13 10:48:23 KST 2016
-                  SOURCE: /home/myeong/workspace/tbob/app/views/index.scala.html
+                  DATE: Sat May 07 06:08:32 KST 2016
+                  SOURCE: /home/myeong/workspace/ampoule/app/views/index.scala.html
                   HASH: 29e57d7643d258df8593264f880c08c241993241
                   MATRIX: 529->1|655->32|683->35|736->80|775->82|804->85|875->130|889->136|954->181|3889->3086
                   LINES: 20->1|25->1|27->3|27->3|27->3|29->5|29->5|29->5|29->5|82->58
