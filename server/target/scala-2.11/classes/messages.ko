@@ -1,0 +1,14 @@
+project.name = 앙풀
+
+main.oneLineAd = 인터넷 쇼핑의 새로운 패러다임!! 앙풀!!
+
+main.topnav.shop = 쇼핑
+main.topnav.blog = 블로그
+main.topnav.learn = 운영진강좌
+main.topnav.videos = 동영상
+
+main.signin = 로그인
+main.signout = 로그아웃
+main.wishlists = 관심상품
+main.cart = 장바구니
+main.account = 회원 정보

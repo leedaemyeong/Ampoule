@@ -1,0 +1,47 @@
+@* headerAd Template File *@
+@(adver: String, where: String)
+
+<style>
+#oneLineAd {
+	position: relative;
+	display: table;
+	background-color: #00CC00;
+	height: 50px; 
+	width: 100%;
+	text-align: center;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+#oneLineAd:hover {
+	background-color: #008080;
+}
+
+#oneLineAd span {
+	display: table-cell;  
+	vertical-align: middle;	
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+</style>
+
+<a href="@where">
+<div id="oneLineAd">
+<span>@adver</span>
+</div>
+</a>
