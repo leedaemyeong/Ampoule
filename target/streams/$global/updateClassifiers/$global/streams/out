@@ -291,7 +291,7 @@
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.10.6!scala-reflect.jar(src)
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.10.6!scala-compiler.jar(src)
-[debug] :: resolution report :: resolve 16ms :: artifacts dl 1ms
+[debug] :: resolution report :: resolve 62ms :: artifacts dl 2ms
 [debug] 	report for default#ampoule$sources_2.10;1.0.0-SNAPSHOT compile produced in /home/myeong/workspace/Ampoule/target/resolution-cache/reports/default-ampoule$sources_2.10-compile.xml
 [debug] 	report for default#ampoule$sources_2.10;1.0.0-SNAPSHOT runtime produced in /home/myeong/workspace/Ampoule/target/resolution-cache/reports/default-ampoule$sources_2.10-runtime.xml
 [debug] 	report for default#ampoule$sources_2.10;1.0.0-SNAPSHOT test produced in /home/myeong/workspace/Ampoule/target/resolution-cache/reports/default-ampoule$sources_2.10-test.xml
@@ -305,4 +305,4 @@
 [debug] 	report for default#ampoule$sources_2.10;1.0.0-SNAPSHOT docs produced in /home/myeong/workspace/Ampoule/target/resolution-cache/reports/default-ampoule$sources_2.10-docs.xml
 [debug] 	report for default#ampoule$sources_2.10;1.0.0-SNAPSHOT pom produced in /home/myeong/workspace/Ampoule/target/resolution-cache/reports/default-ampoule$sources_2.10-pom.xml
 [debug] 	report for default#ampoule$sources_2.10;1.0.0-SNAPSHOT scala-tool produced in /home/myeong/workspace/Ampoule/target/resolution-cache/reports/default-ampoule$sources_2.10-scala-tool.xml
-[debug] 	resolve done (16ms resolve - 1ms download)
+[debug] 	resolve done (62ms resolve - 2ms download)

@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/myeong/workspace/Ampoule/server/conf/routes
-// @DATE:Sun Oct 02 06:58:00 KST 2016
+// @DATE:Thu Oct 20 06:32:13 KST 2016
 
 package controllers;
 
@@ -17,7 +17,6 @@ public class routes {
   public static final controllers.ReverseApplicationController ApplicationController = new controllers.ReverseApplicationController(RoutesPrefix.byNamePrefix());
   public static final controllers.ReverseActivateAccountController ActivateAccountController = new controllers.ReverseActivateAccountController(RoutesPrefix.byNamePrefix());
   public static final controllers.ReverseForgotPasswordController ForgotPasswordController = new controllers.ReverseForgotPasswordController(RoutesPrefix.byNamePrefix());
-  public static final controllers.ReverseApplication Application = new controllers.ReverseApplication(RoutesPrefix.byNamePrefix());
   public static final controllers.ReverseChangePasswordController ChangePasswordController = new controllers.ReverseChangePasswordController(RoutesPrefix.byNamePrefix());
   public static final controllers.ReverseSignUpController SignUpController = new controllers.ReverseSignUpController(RoutesPrefix.byNamePrefix());
 
@@ -31,7 +30,6 @@ public class routes {
     public static final controllers.javascript.ReverseApplicationController ApplicationController = new controllers.javascript.ReverseApplicationController(RoutesPrefix.byNamePrefix());
     public static final controllers.javascript.ReverseActivateAccountController ActivateAccountController = new controllers.javascript.ReverseActivateAccountController(RoutesPrefix.byNamePrefix());
     public static final controllers.javascript.ReverseForgotPasswordController ForgotPasswordController = new controllers.javascript.ReverseForgotPasswordController(RoutesPrefix.byNamePrefix());
-    public static final controllers.javascript.ReverseApplication Application = new controllers.javascript.ReverseApplication(RoutesPrefix.byNamePrefix());
     public static final controllers.javascript.ReverseChangePasswordController ChangePasswordController = new controllers.javascript.ReverseChangePasswordController(RoutesPrefix.byNamePrefix());
     public static final controllers.javascript.ReverseSignUpController SignUpController = new controllers.javascript.ReverseSignUpController(RoutesPrefix.byNamePrefix());
   }

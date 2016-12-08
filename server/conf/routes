@@ -23,11 +23,11 @@ POST        /password/change                 controllers.ChangePasswordControlle
 GET         /account/email/:email            controllers.ActivateAccountController.send(email: String)
 GET         /account/activate/:token         controllers.ActivateAccountController.activate(token: java.util.UUID)
 
-GET         /index                           controllers.Application.index
-GET         /shop                            controllers.Application.shop
-GET         /blog                            controllers.Application.blog
-GET         /learn                           controllers.Application.learn
-GET         /videos                          controllers.Application.videos
+#GET         /index                           controllers.Application.index
+#GET         /shop                            controllers.Application.shop
+#GET         /blog                            controllers.Application.blog
+#GET         /learn                           controllers.Application.learn
+#GET         /videos                          controllers.Application.videos
 
 # Map static resources from the /public folder to the /assets URL path
 GET         /assets/*file                    controllers.Assets.at(path="/public", file)

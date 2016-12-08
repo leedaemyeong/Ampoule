@@ -14,25 +14,25 @@ import play.api.templates.PlayMagic._
 import play.api.mvc._
 import play.api.data._
 
-class index extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template2[Messages,play.api.Environment,play.twirl.api.HtmlFormat.Appendable] {
+class index extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template3[RequestHeader,Messages,WebJarAssets,play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply/*1.2*/()(implicit messages: Messages, environment: play.api.Environment):play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*1.2*/()(implicit request: RequestHeader, messages: Messages, webJarAssets: WebJarAssets):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](format.raw/*1.68*/("""
+Seq[Any](format.raw/*1.85*/("""
 
-"""),_display_(/*3.2*/main_org("Ampoule for your beautiful life", "index")/*3.54*/ {_display_(Seq[Any](format.raw/*3.56*/("""
+"""),_display_(/*3.2*/main("Ampoule for your beautiful life")/*3.41*/ {_display_(Seq[Any](format.raw/*3.43*/("""
 
-	"""),format.raw/*5.2*/("""<link rel="stylesheet" media="screen" href=""""),_display_(/*5.47*/routes/*5.53*/.Assets.at("stylesheets/carousel.css")),format.raw/*5.91*/("""">
+	"""),format.raw/*5.2*/("""<link rel="stylesheet" media="screen" href='"""),_display_(/*5.47*/routes/*5.53*/.Assets.at("stylesheets/carousel.css")),format.raw/*5.91*/("""'>
 
     <!-- Carousel
     ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
-      <ol class="carousel-indicators">
+          <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
@@ -85,9 +85,9 @@ Seq[Any](format.raw/*1.68*/("""
     }
   }
 
-  def render(messages:Messages,environment:play.api.Environment): play.twirl.api.HtmlFormat.Appendable = apply()(messages,environment)
+  def render(request:RequestHeader,messages:Messages,webJarAssets:WebJarAssets): play.twirl.api.HtmlFormat.Appendable = apply()(request,messages,webJarAssets)
 
-  def f:(() => (Messages,play.api.Environment) => play.twirl.api.HtmlFormat.Appendable) = () => (messages,environment) => apply()(messages,environment)
+  def f:(() => (RequestHeader,Messages,WebJarAssets) => play.twirl.api.HtmlFormat.Appendable) = () => (request,messages,webJarAssets) => apply()(request,messages,webJarAssets)
 
   def ref: this.type = this
 
@@ -100,10 +100,10 @@ Seq[Any](format.raw/*1.68*/("""
 object index extends index_Scope0.index
               /*
                   -- GENERATED --
-                  DATE: Tue Oct 04 04:13:57 KST 2016
+                  DATE: Wed Nov 02 06:19:25 KST 2016
                   SOURCE: /home/myeong/workspace/Ampoule/server/app/views/index.scala.html
-                  HASH: 40c202fe413c3c5daf2ead8a49336d82e95e476c
-                  MATRIX: 550->1|711->67|739->70|799->122|838->124|867->127|938->172|952->178|1010->216|3945->3121
+                  HASH: 0e255943770e126a68faadf91b3d66546ff77156
+                  MATRIX: 556->1|734->84|762->87|809->126|848->128|877->131|948->176|962->182|1020->220|3959->3129
                   LINES: 20->1|25->1|27->3|27->3|27->3|29->5|29->5|29->5|29->5|82->58
                   -- GENERATED --
               */

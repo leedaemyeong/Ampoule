@@ -24,84 +24,99 @@ class main extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format
 
 Seq[Any](format.raw/*1.147*/("""
 
-"""),format.raw/*3.1*/("""<!DOCTYPE html>
+"""),format.raw/*3.1*/("""<!doctype html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" type="image/png" href=""""),_display_(/*9.59*/routes/*9.65*/.Assets.at("images/favicon.png")),format.raw/*9.97*/("""">
-        <title>"""),_display_(/*10.17*/title),format.raw/*10.22*/("""</title>
+        <link rel="icon" href=""""),_display_(/*10.33*/routes/*10.39*/.Assets.at("images/favicon.png")),format.raw/*10.71*/("""" sizes="32x32">
+        <title>"""),_display_(/*11.17*/title),format.raw/*11.22*/("""</title>
         <link href="//fonts.googleapis.com/css?family=Roboto|Montserrat:400,700|Open+Sans:400,300,600" rel="stylesheet">
         <link href="//cdnjs.cloudflare.com/ajax/libs/ionicons/1.5.2/css/ionicons.min.css" rel="stylesheet">
-        <link rel="stylesheet" href=""""),_display_(/*13.39*/routes/*13.45*/.WebJarAssets.at(webJarAssets.locate("bootstrap.min.css"))),format.raw/*13.103*/("""">
-        <link rel="stylesheet" href=""""),_display_(/*14.39*/routes/*14.45*/.WebJarAssets.at(webJarAssets.locate("bootstrap-theme.min.css"))),format.raw/*14.109*/("""">
-        <link rel="stylesheet" href=""""),_display_(/*15.39*/routes/*15.45*/.Assets.at("stylesheets/main.css")),format.raw/*15.79*/("""">
-            <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-            <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-            <![endif]-->
+        <link rel="stylesheet" href=""""),_display_(/*14.39*/routes/*14.45*/.WebJarAssets.at(webJarAssets.locate("bootstrap.min.css"))),format.raw/*14.103*/("""">
+        <link rel="stylesheet" href=""""),_display_(/*15.39*/routes/*15.45*/.WebJarAssets.at(webJarAssets.locate("bootstrap-theme.min.css"))),format.raw/*15.109*/("""">
+        <link rel="stylesheet" href=""""),_display_(/*16.39*/routes/*16.45*/.Assets.at("stylesheets/main.css")),format.raw/*16.79*/("""">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
     </head>
     <body>
-        <header class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <header class="navbar navbar-default" role="navigation">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">"""),_display_(/*27.48*/Messages("toggle.navigation")),format.raw/*27.77*/("""</span>
+                        <span class="sr-only">"""),_display_(/*28.48*/Messages("toggle.navigation")),format.raw/*28.77*/("""</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href=""""),_display_(/*32.52*/routes/*32.58*/.ApplicationController.index),format.raw/*32.86*/("""">Silhouette Seed Template</a>
+                    <a class="navbar-brand" href=""""),_display_(/*33.52*/routes/*33.58*/.ApplicationController.index),format.raw/*33.86*/("""">"""),_display_(/*33.89*/Messages("project.name")),format.raw/*33.113*/("""</a>
                 </div>
                 <nav class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href=""""),_display_(/*36.39*/routes/*36.45*/.ApplicationController.index),format.raw/*36.73*/("""">"""),_display_(/*36.76*/Messages("home")),format.raw/*36.92*/("""</a></li>
-                        <li><a href="https://github.com/mohiva/play-silhouette-seed">GitHub</a></li>
+                        <li><a href=""""),_display_(/*37.39*/routes/*37.45*/.ApplicationController.index),format.raw/*37.73*/("""">"""),_display_(/*37.76*/Messages("accessory")),format.raw/*37.97*/("""</a></li>
+                        <li><a href=""""),_display_(/*38.39*/routes/*38.45*/.ApplicationController.index),format.raw/*38.73*/("""">"""),_display_(/*38.76*/Messages("stationary")),format.raw/*38.98*/("""</a></li>
+                        <li><a href=""""),_display_(/*39.39*/routes/*39.45*/.ApplicationController.index),format.raw/*39.73*/("""">"""),_display_(/*39.76*/Messages("flower")),format.raw/*39.94*/("""</a></li>
+                        <li><a href=""""),_display_(/*40.39*/routes/*40.45*/.ApplicationController.index),format.raw/*40.73*/("""">"""),_display_(/*40.76*/Messages("styling")),format.raw/*40.95*/("""</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        """),_display_(/*40.26*/user/*40.30*/.map/*40.34*/ { u =>_display_(Seq[Any](format.raw/*40.41*/("""
-                            """),format.raw/*41.29*/("""<li><a href=""""),_display_(/*41.43*/routes/*41.49*/.ApplicationController.index),format.raw/*41.77*/("""">"""),_display_(/*41.80*/u/*41.81*/.name),format.raw/*41.86*/("""</a></li>
-                            """),_display_(/*42.30*/if(u.loginInfo.providerID == com.mohiva.play.silhouette.impl.providers.CredentialsProvider.ID)/*42.124*/ {_display_(Seq[Any](format.raw/*42.126*/("""
-                                """),format.raw/*43.33*/("""<li><a href=""""),_display_(/*43.47*/routes/*43.53*/.ChangePasswordController.view),format.raw/*43.83*/("""">"""),_display_(/*43.86*/Messages("change.password")),format.raw/*43.113*/("""</a></li>
-                            """)))}),format.raw/*44.30*/("""
-                            """),format.raw/*45.29*/("""<li><a href=""""),_display_(/*45.43*/routes/*45.49*/.ApplicationController.signOut),format.raw/*45.79*/("""">"""),_display_(/*45.82*/Messages("sign.out")),format.raw/*45.102*/("""</a></li>
-                        """)))}/*46.26*/.getOrElse/*46.36*/ {_display_(Seq[Any](format.raw/*46.38*/("""
-                            """),format.raw/*47.29*/("""<li><a href=""""),_display_(/*47.43*/routes/*47.49*/.SignInController.view),format.raw/*47.71*/("""">"""),_display_(/*47.74*/Messages("sign.in")),format.raw/*47.93*/("""</a></li>
-                            <li><a href=""""),_display_(/*48.43*/routes/*48.49*/.SignUpController.view),format.raw/*48.71*/("""">"""),_display_(/*48.74*/Messages("sign.up")),format.raw/*48.93*/("""</a></li>
-                        """)))}),format.raw/*49.26*/("""
-                    """),format.raw/*50.21*/("""</ul>
+                        """),_display_(/*43.26*/user/*43.30*/.map/*43.34*/ { u =>_display_(Seq[Any](format.raw/*43.41*/("""
+                            """),format.raw/*44.29*/("""<li><a href=""""),_display_(/*44.43*/routes/*44.49*/.ApplicationController.index),format.raw/*44.77*/("""">"""),_display_(/*44.80*/u/*44.81*/.name),format.raw/*44.86*/("""</a></li>
+                            """),_display_(/*45.30*/if(u.loginInfo.providerID == com.mohiva.play.silhouette.impl.providers.CredentialsProvider.ID)/*45.124*/ {_display_(Seq[Any](format.raw/*45.126*/("""
+                                """),format.raw/*46.33*/("""<li><a href=""""),_display_(/*46.47*/routes/*46.53*/.ChangePasswordController.view),format.raw/*46.83*/("""">"""),_display_(/*46.86*/Messages("change.password")),format.raw/*46.113*/("""</a></li>
+                            """)))}),format.raw/*47.30*/("""
+                            """),format.raw/*48.29*/("""<li><a href=""""),_display_(/*48.43*/routes/*48.49*/.ApplicationController.signOut),format.raw/*48.79*/("""">"""),_display_(/*48.82*/Messages("sign.out")),format.raw/*48.102*/("""</a></li>
+                        """)))}/*49.26*/.getOrElse/*49.36*/ {_display_(Seq[Any](format.raw/*49.38*/("""
+                            """),format.raw/*50.29*/("""<li><a href=""""),_display_(/*50.43*/routes/*50.49*/.SignInController.view),format.raw/*50.71*/("""">"""),_display_(/*50.74*/Messages("sign.in")),format.raw/*50.93*/("""</a></li>
+                            <li><a href=""""),_display_(/*51.43*/routes/*51.49*/.SignUpController.view),format.raw/*51.71*/("""">"""),_display_(/*51.74*/Messages("sign.up")),format.raw/*51.93*/("""</a></li>
+                        """)))}),format.raw/*52.26*/("""
+                        """),format.raw/*53.25*/("""<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            """),_display_(/*54.30*/Messages("for.more.convenience")),format.raw/*54.62*/("""
+                            """),format.raw/*55.29*/("""<span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <li><a href="#">장바구니 담아놓고 나중에 구입가능</a></li>
+                            <li><a href="#">주로찾는카테고리로이동</a></li>
+                            <li><a href="#"> 내글만 보고 싶음</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#"> 이 모든것은 로그인을 해야~~</a></li>
+                        </ul>
+                    </ul>
                 </nav>
             </div>
         </header>
         <main class="container">
             <div class="starter-template row">
-                """),_display_(/*56.18*/request/*56.25*/.flash.get("error").map/*56.48*/ { msg =>_display_(Seq[Any](format.raw/*56.57*/("""
-                    """),format.raw/*57.21*/("""<div class="col-md-6 col-md-offset-3 alert alert-danger">
+                """),_display_(/*70.18*/request/*70.25*/.flash.get("error").map/*70.48*/ { msg =>_display_(Seq[Any](format.raw/*70.57*/("""
+                    """),format.raw/*71.21*/("""<div class="col-md-6 col-md-offset-3 alert alert-danger">
                         <a href="#" class="close" data-dismiss="alert">&times;</a>
-                        <strong>"""),_display_(/*59.34*/Messages("error")),format.raw/*59.51*/("""</strong> """),_display_(/*59.62*/msg),format.raw/*59.65*/("""
-                    """),format.raw/*60.21*/("""</div>
-                """)))}),format.raw/*61.18*/("""
-                """),_display_(/*62.18*/request/*62.25*/.flash.get("info").map/*62.47*/ { msg =>_display_(Seq[Any](format.raw/*62.56*/("""
-                    """),format.raw/*63.21*/("""<div class="col-md-6 col-md-offset-3 alert alert-info">
+                        <strong>"""),_display_(/*73.34*/Messages("error")),format.raw/*73.51*/("""</strong> """),_display_(/*73.62*/msg),format.raw/*73.65*/("""
+                    """),format.raw/*74.21*/("""</div>
+                """)))}),format.raw/*75.18*/("""
+                """),_display_(/*76.18*/request/*76.25*/.flash.get("info").map/*76.47*/ { msg =>_display_(Seq[Any](format.raw/*76.56*/("""
+                    """),format.raw/*77.21*/("""<div class="col-md-6 col-md-offset-3 alert alert-info">
                         <a href="#" class="close" data-dismiss="alert">&times;</a>
-                        <strong>"""),_display_(/*65.34*/Messages("info")),format.raw/*65.50*/("""</strong> """),_display_(/*65.61*/msg),format.raw/*65.64*/("""
-                    """),format.raw/*66.21*/("""</div>
-                """)))}),format.raw/*67.18*/("""
-                """),_display_(/*68.18*/request/*68.25*/.flash.get("success").map/*68.50*/ { msg =>_display_(Seq[Any](format.raw/*68.59*/("""
-                    """),format.raw/*69.21*/("""<div class="col-md-6 col-md-offset-3 alert alert-success">
+                        <strong>"""),_display_(/*79.34*/Messages("info")),format.raw/*79.50*/("""</strong> """),_display_(/*79.61*/msg),format.raw/*79.64*/("""
+                    """),format.raw/*80.21*/("""</div>
+                """)))}),format.raw/*81.18*/("""
+                """),_display_(/*82.18*/request/*82.25*/.flash.get("success").map/*82.50*/ { msg =>_display_(Seq[Any](format.raw/*82.59*/("""
+                    """),format.raw/*83.21*/("""<div class="col-md-6 col-md-offset-3 alert alert-success">
                         <a href="#" class="close" data-dismiss="alert">&times;</a>
-                        <strong>"""),_display_(/*71.34*/Messages("success")),format.raw/*71.53*/("""</strong> """),_display_(/*71.64*/msg),format.raw/*71.67*/("""
-                    """),format.raw/*72.21*/("""</div>
-                """)))}),format.raw/*73.18*/("""
-                """),_display_(/*74.18*/content),format.raw/*74.25*/("""
-            """),format.raw/*75.13*/("""</div>
+                        <strong>"""),_display_(/*85.34*/Messages("success")),format.raw/*85.53*/("""</strong> """),_display_(/*85.64*/msg),format.raw/*85.67*/("""
+                    """),format.raw/*86.21*/("""</div>
+                """)))}),format.raw/*87.18*/("""
+                """),_display_(/*88.18*/content),format.raw/*88.25*/("""
+            """),format.raw/*89.13*/("""</div>
         </main>
-        <script type="text/javascript" src=""""),_display_(/*77.46*/routes/*77.52*/.WebJarAssets.at(webJarAssets.locate("jquery.min.js"))),format.raw/*77.106*/(""""></script>
-        <script type="text/javascript" src=""""),_display_(/*78.46*/routes/*78.52*/.WebJarAssets.at(webJarAssets.locate("bootstrap.min.js"))),format.raw/*78.109*/(""""></script>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <script type="text/javascript" src=""""),_display_(/*92.46*/routes/*92.52*/.WebJarAssets.at(webJarAssets.locate("jquery.min.js"))),format.raw/*92.106*/(""""></script>
+        <script type="text/javascript" src=""""),_display_(/*93.46*/routes/*93.52*/.WebJarAssets.at(webJarAssets.locate("bootstrap.min.js"))),format.raw/*93.109*/(""""></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>
-        <script src=""""),_display_(/*80.23*/routes/*80.29*/.Assets.at("javascripts/zxcvbnShim.js")),format.raw/*80.68*/(""""></script>
+        <script src=""""),_display_(/*95.23*/routes/*95.29*/.Assets.at("javascripts/zxcvbnShim.js")),format.raw/*95.68*/(""""></script>
     </body>
 </html>
 """))
@@ -124,11 +139,11 @@ Seq[Any](format.raw/*1.147*/("""
 object main extends main_Scope0.main
               /*
                   -- GENERATED --
-                  DATE: Tue Oct 04 04:13:57 KST 2016
+                  DATE: Tue Nov 22 07:53:48 KST 2016
                   SOURCE: /home/myeong/workspace/Ampoule/server/app/views/main.scala.html
-                  HASH: 300aaca3ab4e34abeaa43a888a77b7d1b749c338
-                  MATRIX: 586->1|827->146|855->148|1153->420|1167->426|1219->458|1265->477|1291->482|1594->758|1609->764|1689->822|1757->863|1772->869|1858->933|1926->974|1941->980|1996->1014|2716->1707|2766->1736|3047->1990|3062->1996|3111->2024|3333->2219|3348->2225|3397->2253|3427->2256|3464->2272|3714->2495|3727->2499|3740->2503|3785->2510|3842->2539|3883->2553|3898->2559|3947->2587|3977->2590|3987->2591|4013->2596|4079->2635|4183->2729|4224->2731|4285->2764|4326->2778|4341->2784|4392->2814|4422->2817|4471->2844|4541->2883|4598->2912|4639->2926|4654->2932|4705->2962|4735->2965|4777->2985|4831->3020|4850->3030|4890->3032|4947->3061|4988->3075|5003->3081|5046->3103|5076->3106|5116->3125|5195->3177|5210->3183|5253->3205|5283->3208|5323->3227|5389->3262|5438->3283|5628->3446|5644->3453|5676->3476|5723->3485|5772->3506|5973->3680|6011->3697|6049->3708|6073->3711|6122->3732|6177->3756|6222->3774|6238->3781|6269->3803|6316->3812|6365->3833|6564->4005|6601->4021|6639->4032|6663->4035|6712->4056|6767->4080|6812->4098|6828->4105|6862->4130|6909->4139|6958->4160|7160->4335|7200->4354|7238->4365|7262->4368|7311->4389|7366->4413|7411->4431|7439->4438|7480->4451|7575->4519|7590->4525|7666->4579|7750->4636|7765->4642|7844->4699|7999->4827|8014->4833|8074->4872
-                  LINES: 20->1|25->1|27->3|33->9|33->9|33->9|34->10|34->10|37->13|37->13|37->13|38->14|38->14|38->14|39->15|39->15|39->15|51->27|51->27|56->32|56->32|56->32|60->36|60->36|60->36|60->36|60->36|64->40|64->40|64->40|64->40|65->41|65->41|65->41|65->41|65->41|65->41|65->41|66->42|66->42|66->42|67->43|67->43|67->43|67->43|67->43|67->43|68->44|69->45|69->45|69->45|69->45|69->45|69->45|70->46|70->46|70->46|71->47|71->47|71->47|71->47|71->47|71->47|72->48|72->48|72->48|72->48|72->48|73->49|74->50|80->56|80->56|80->56|80->56|81->57|83->59|83->59|83->59|83->59|84->60|85->61|86->62|86->62|86->62|86->62|87->63|89->65|89->65|89->65|89->65|90->66|91->67|92->68|92->68|92->68|92->68|93->69|95->71|95->71|95->71|95->71|96->72|97->73|98->74|98->74|99->75|101->77|101->77|101->77|102->78|102->78|102->78|104->80|104->80|104->80
+                  HASH: e883008af24a34ce1d9c2d66e9e10ae8178fa146
+                  MATRIX: 586->1|827->146|855->148|1153->420|1167->426|1219->458|1281->493|1296->499|1349->531|1409->564|1435->569|1738->845|1753->851|1833->909|1901->950|1916->956|2002->1020|2070->1061|2085->1067|2140->1101|2823->1757|2873->1786|3154->2040|3169->2046|3218->2074|3248->2077|3294->2101|3490->2270|3505->2276|3554->2304|3584->2307|3626->2328|3701->2376|3716->2382|3765->2410|3795->2413|3838->2435|3913->2483|3928->2489|3977->2517|4007->2520|4046->2538|4121->2586|4136->2592|4185->2620|4215->2623|4255->2642|4404->2764|4417->2768|4430->2772|4475->2779|4532->2808|4573->2822|4588->2828|4637->2856|4667->2859|4677->2860|4703->2865|4769->2904|4873->2998|4914->3000|4975->3033|5016->3047|5031->3053|5082->3083|5112->3086|5161->3113|5231->3152|5288->3181|5329->3195|5344->3201|5395->3231|5425->3234|5467->3254|5521->3289|5540->3299|5580->3301|5637->3330|5678->3344|5693->3350|5736->3372|5766->3375|5806->3394|5885->3446|5900->3452|5943->3474|5973->3477|6013->3496|6079->3531|6132->3556|6335->3732|6388->3764|6445->3793|7173->4494|7189->4501|7221->4524|7268->4533|7317->4554|7518->4728|7556->4745|7594->4756|7618->4759|7667->4780|7722->4804|7767->4822|7783->4829|7814->4851|7861->4860|7910->4881|8109->5053|8146->5069|8184->5080|8208->5083|8257->5104|8312->5128|8357->5146|8373->5153|8407->5178|8454->5187|8503->5208|8705->5383|8745->5402|8783->5413|8807->5416|8856->5437|8911->5461|8956->5479|8984->5486|9025->5499|9241->5688|9256->5694|9332->5748|9416->5805|9431->5811|9510->5868|9665->5996|9680->6002|9740->6041
+                  LINES: 20->1|25->1|27->3|33->9|33->9|33->9|34->10|34->10|34->10|35->11|35->11|38->14|38->14|38->14|39->15|39->15|39->15|40->16|40->16|40->16|52->28|52->28|57->33|57->33|57->33|57->33|57->33|61->37|61->37|61->37|61->37|61->37|62->38|62->38|62->38|62->38|62->38|63->39|63->39|63->39|63->39|63->39|64->40|64->40|64->40|64->40|64->40|67->43|67->43|67->43|67->43|68->44|68->44|68->44|68->44|68->44|68->44|68->44|69->45|69->45|69->45|70->46|70->46|70->46|70->46|70->46|70->46|71->47|72->48|72->48|72->48|72->48|72->48|72->48|73->49|73->49|73->49|74->50|74->50|74->50|74->50|74->50|74->50|75->51|75->51|75->51|75->51|75->51|76->52|77->53|78->54|78->54|79->55|94->70|94->70|94->70|94->70|95->71|97->73|97->73|97->73|97->73|98->74|99->75|100->76|100->76|100->76|100->76|101->77|103->79|103->79|103->79|103->79|104->80|105->81|106->82|106->82|106->82|106->82|107->83|109->85|109->85|109->85|109->85|110->86|111->87|112->88|112->88|113->89|116->92|116->92|116->92|117->93|117->93|117->93|119->95|119->95|119->95
                   -- GENERATED --
               */
           

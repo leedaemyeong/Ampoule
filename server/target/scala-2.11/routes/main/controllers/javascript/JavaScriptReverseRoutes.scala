@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/myeong/workspace/Ampoule/server/conf/routes
-// @DATE:Sun Oct 02 06:58:00 KST 2016
+// @DATE:Thu Oct 20 06:32:13 KST 2016
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -219,66 +219,6 @@ package controllers.javascript {
       """
         function() {
           return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "password/forgot"})
-        }
-      """
-    )
-  
-  }
-
-  // @LINE:26
-  class ReverseApplication(_prefix: => String) {
-
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:28
-    def blog: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.blog",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "blog"})
-        }
-      """
-    )
-  
-    // @LINE:30
-    def videos: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.videos",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "videos"})
-        }
-      """
-    )
-  
-    // @LINE:27
-    def shop: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.shop",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "shop"})
-        }
-      """
-    )
-  
-    // @LINE:29
-    def learn: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.learn",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "learn"})
-        }
-      """
-    )
-  
-    // @LINE:26
-    def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Application.index",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "index"})
         }
       """
     )

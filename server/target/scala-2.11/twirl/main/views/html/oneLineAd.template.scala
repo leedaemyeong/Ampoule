@@ -14,15 +14,15 @@ import play.api.templates.PlayMagic._
 import play.api.mvc._
 import play.api.data._
 
-class oneLineAd extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template2[String,String,play.twirl.api.HtmlFormat.Appendable] {
+class oneLineAd extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template1[String,play.twirl.api.HtmlFormat.Appendable] {
 
   /* headerAd Template File */
-  def apply/*2.2*/(adver: String, where: String):play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*2.2*/(adver: String):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](format.raw/*2.32*/("""
+Seq[Any](format.raw/*2.17*/("""
 
 """),format.raw/*4.1*/("""<style>
 #oneLineAd """),format.raw/*5.12*/("""{"""),format.raw/*5.13*/("""
@@ -63,7 +63,7 @@ Seq[Any](format.raw/*2.32*/("""
 
 """),format.raw/*41.1*/("""</style>
 
-<a href=""""),_display_(/*43.11*/where),format.raw/*43.16*/("""">
+<a href="#">
 <div id="oneLineAd">
 <span>"""),_display_(/*45.8*/adver),format.raw/*45.13*/("""</span>
 </div>
@@ -72,9 +72,9 @@ Seq[Any](format.raw/*2.32*/("""
     }
   }
 
-  def render(adver:String,where:String): play.twirl.api.HtmlFormat.Appendable = apply(adver,where)
+  def render(adver:String): play.twirl.api.HtmlFormat.Appendable = apply(adver)
 
-  def f:((String,String) => play.twirl.api.HtmlFormat.Appendable) = (adver,where) => apply(adver,where)
+  def f:((String) => play.twirl.api.HtmlFormat.Appendable) = (adver) => apply(adver)
 
   def ref: this.type = this
 
@@ -87,11 +87,11 @@ Seq[Any](format.raw/*2.32*/("""
 object oneLineAd extends oneLineAd_Scope0.oneLineAd
               /*
                   -- GENERATED --
-                  DATE: Tue Oct 04 04:13:57 KST 2016
+                  DATE: Thu Oct 20 06:40:26 KST 2016
                   SOURCE: /home/myeong/workspace/Ampoule/server/app/views/oneLineAd.scala.html
-                  HASH: 23552536ae303383fdb1f47d6b96f1096b177058
-                  MATRIX: 566->30|691->60|719->62|765->81|793->82|821->84|1001->237|1029->238|1058->240|1103->257|1132->258|1161->260|1215->287|1243->288|1272->290|1316->306|1345->307|1374->309|1450->358|1478->359|1507->361|1541->368|1569->369|1598->371|1648->394|1676->395|1705->397|1740->405|1769->406|1798->408|1848->431|1876->432|1905->434|1942->443|1971->444|2000->446|2050->469|2078->470|2107->472|2145->482|2174->483|2203->485|2253->508|2281->509|2310->511|2357->531|2383->536|2440->567|2466->572
-                  LINES: 20->2|25->2|27->4|28->5|28->5|29->6|37->14|37->14|39->16|39->16|39->16|40->17|41->18|41->18|43->20|43->20|43->20|44->21|46->23|46->23|48->25|48->25|48->25|49->26|50->27|50->27|52->29|52->29|52->29|53->30|54->31|54->31|56->33|56->33|56->33|57->34|58->35|58->35|60->37|60->37|60->37|61->38|62->39|62->39|64->41|66->43|66->43|68->45|68->45
+                  HASH: 516b55b01d0b8ab5d5bd863bf40f188929e2a97a
+                  MATRIX: 559->30|669->45|697->47|743->66|771->67|799->69|979->222|1007->223|1036->225|1081->242|1110->243|1139->245|1193->272|1221->273|1250->275|1294->291|1323->292|1352->294|1428->343|1456->344|1485->346|1519->353|1547->354|1576->356|1626->379|1654->380|1683->382|1718->390|1747->391|1776->393|1826->416|1854->417|1883->419|1920->428|1949->429|1978->431|2028->454|2056->455|2085->457|2123->467|2152->468|2181->470|2231->493|2259->494|2288->496|2365->547|2391->552
+                  LINES: 20->2|25->2|27->4|28->5|28->5|29->6|37->14|37->14|39->16|39->16|39->16|40->17|41->18|41->18|43->20|43->20|43->20|44->21|46->23|46->23|48->25|48->25|48->25|49->26|50->27|50->27|52->29|52->29|52->29|53->30|54->31|54->31|56->33|56->33|56->33|57->34|58->35|58->35|60->37|60->37|60->37|61->38|62->39|62->39|64->41|68->45|68->45
                   -- GENERATED --
               */
           

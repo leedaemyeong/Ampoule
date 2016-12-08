@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/myeong/workspace/Ampoule/server/conf/routes
-// @DATE:Sun Oct 02 06:58:00 KST 2016
+// @DATE:Thu Oct 20 06:32:13 KST 2016
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -159,45 +159,6 @@ package controllers {
     def submit(): Call = {
       import ReverseRouteContext.empty
       Call("POST", _prefix + { _defaultPrefix } + "password/forgot")
-    }
-  
-  }
-
-  // @LINE:26
-  class ReverseApplication(_prefix: => String) {
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:28
-    def blog(): Call = {
-      import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "blog")
-    }
-  
-    // @LINE:30
-    def videos(): Call = {
-      import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "videos")
-    }
-  
-    // @LINE:27
-    def shop(): Call = {
-      import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "shop")
-    }
-  
-    // @LINE:29
-    def learn(): Call = {
-      import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "learn")
-    }
-  
-    // @LINE:26
-    def index(): Call = {
-      import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "index")
     }
   
   }

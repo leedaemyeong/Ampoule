@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/myeong/workspace/Ampoule/server/conf/routes
-// @DATE:Sun Oct 02 06:58:00 KST 2016
+// @DATE:Thu Oct 20 06:32:13 KST 2016
 
 
 package router {

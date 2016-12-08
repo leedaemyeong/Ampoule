@@ -4,7 +4,7 @@
 		module="ampoule-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20161004043701"
+		publication="20161020060801"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>

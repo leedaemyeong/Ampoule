@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/myeong/workspace/Ampoule/server/conf/routes
-// @DATE:Sun Oct 02 06:58:00 KST 2016
+// @DATE:Thu Oct 20 06:32:13 KST 2016
 
 package router
 
@@ -27,13 +27,11 @@ class Routes(
   // @LINE:16
   ForgotPasswordController_3: controllers.ForgotPasswordController,
   // @LINE:18
-  ResetPasswordController_10: controllers.ResetPasswordController,
+  ResetPasswordController_9: controllers.ResetPasswordController,
   // @LINE:20
   ChangePasswordController_4: controllers.ChangePasswordController,
   // @LINE:23
   ActivateAccountController_0: controllers.ActivateAccountController,
-  // @LINE:26
-  Application_9: controllers.Application,
   // @LINE:33
   Assets_5: controllers.Assets,
   // @LINE:34
@@ -54,24 +52,22 @@ class Routes(
     // @LINE:16
     ForgotPasswordController_3: controllers.ForgotPasswordController,
     // @LINE:18
-    ResetPasswordController_10: controllers.ResetPasswordController,
+    ResetPasswordController_9: controllers.ResetPasswordController,
     // @LINE:20
     ChangePasswordController_4: controllers.ChangePasswordController,
     // @LINE:23
     ActivateAccountController_0: controllers.ActivateAccountController,
-    // @LINE:26
-    Application_9: controllers.Application,
     // @LINE:33
     Assets_5: controllers.Assets,
     // @LINE:34
     WebJarAssets_7: controllers.WebJarAssets
-  ) = this(errorHandler, ApplicationController_8, SocialAuthController_6, SignUpController_1, SignInController_2, ForgotPasswordController_3, ResetPasswordController_10, ChangePasswordController_4, ActivateAccountController_0, Application_9, Assets_5, WebJarAssets_7, "/")
+  ) = this(errorHandler, ApplicationController_8, SocialAuthController_6, SignUpController_1, SignInController_2, ForgotPasswordController_3, ResetPasswordController_9, ChangePasswordController_4, ActivateAccountController_0, Assets_5, WebJarAssets_7, "/")
 
   import ReverseRouteContext.empty
 
   def withPrefix(prefix: String): Routes = {
     router.RoutesPrefix.setPrefix(prefix)
-    new Routes(errorHandler, ApplicationController_8, SocialAuthController_6, SignUpController_1, SignInController_2, ForgotPasswordController_3, ResetPasswordController_10, ChangePasswordController_4, ActivateAccountController_0, Application_9, Assets_5, WebJarAssets_7, prefix)
+    new Routes(errorHandler, ApplicationController_8, SocialAuthController_6, SignUpController_1, SignInController_2, ForgotPasswordController_3, ResetPasswordController_9, ChangePasswordController_4, ActivateAccountController_0, Assets_5, WebJarAssets_7, prefix)
   }
 
   private[this] val defaultPrefix: String = {
@@ -94,11 +90,6 @@ class Routes(
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """password/change""", """controllers.ChangePasswordController.submit"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """account/email/""" + "$" + """email<[^/]+>""", """controllers.ActivateAccountController.send(email:String)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """account/activate/""" + "$" + """token<[^/]+>""", """controllers.ActivateAccountController.activate(token:java.util.UUID)"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """index""", """controllers.Application.index"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """shop""", """controllers.Application.shop"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """blog""", """controllers.Application.blog"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """learn""", """controllers.Application.learn"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """videos""", """controllers.Application.videos"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.at(path:String = "/public", file:String)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """webjars/""" + "$" + """file<.+>""", """controllers.WebJarAssets.at(file:String)"""),
     Nil
@@ -266,7 +257,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("password/reset/"), DynamicPart("token", """[^/]+""",true)))
   )
   private[this] lazy val controllers_ResetPasswordController_view9_invoker = createInvoker(
-    ResetPasswordController_10.view(fakeValue[java.util.UUID]),
+    ResetPasswordController_9.view(fakeValue[java.util.UUID]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.ResetPasswordController",
@@ -283,7 +274,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("password/reset/"), DynamicPart("token", """[^/]+""",true)))
   )
   private[this] lazy val controllers_ResetPasswordController_submit10_invoker = createInvoker(
-    ResetPasswordController_10.submit(fakeValue[java.util.UUID]),
+    ResetPasswordController_9.submit(fakeValue[java.util.UUID]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.ResetPasswordController",
@@ -363,96 +354,11 @@ class Routes(
     )
   )
 
-  // @LINE:26
-  private[this] lazy val controllers_Application_index15_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("index")))
-  )
-  private[this] lazy val controllers_Application_index15_invoker = createInvoker(
-    Application_9.index,
-    HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.Application",
-      "index",
-      Nil,
-      "GET",
-      """""",
-      this.prefix + """index"""
-    )
-  )
-
-  // @LINE:27
-  private[this] lazy val controllers_Application_shop16_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("shop")))
-  )
-  private[this] lazy val controllers_Application_shop16_invoker = createInvoker(
-    Application_9.shop,
-    HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.Application",
-      "shop",
-      Nil,
-      "GET",
-      """""",
-      this.prefix + """shop"""
-    )
-  )
-
-  // @LINE:28
-  private[this] lazy val controllers_Application_blog17_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("blog")))
-  )
-  private[this] lazy val controllers_Application_blog17_invoker = createInvoker(
-    Application_9.blog,
-    HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.Application",
-      "blog",
-      Nil,
-      "GET",
-      """""",
-      this.prefix + """blog"""
-    )
-  )
-
-  // @LINE:29
-  private[this] lazy val controllers_Application_learn18_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("learn")))
-  )
-  private[this] lazy val controllers_Application_learn18_invoker = createInvoker(
-    Application_9.learn,
-    HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.Application",
-      "learn",
-      Nil,
-      "GET",
-      """""",
-      this.prefix + """learn"""
-    )
-  )
-
-  // @LINE:30
-  private[this] lazy val controllers_Application_videos19_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("videos")))
-  )
-  private[this] lazy val controllers_Application_videos19_invoker = createInvoker(
-    Application_9.videos,
-    HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.Application",
-      "videos",
-      Nil,
-      "GET",
-      """""",
-      this.prefix + """videos"""
-    )
-  )
-
   // @LINE:33
-  private[this] lazy val controllers_Assets_at20_route = Route("GET",
+  private[this] lazy val controllers_Assets_at15_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_at20_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_at15_invoker = createInvoker(
     Assets_5.at(fakeValue[String], fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -466,10 +372,10 @@ class Routes(
   )
 
   // @LINE:34
-  private[this] lazy val controllers_WebJarAssets_at21_route = Route("GET",
+  private[this] lazy val controllers_WebJarAssets_at16_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("webjars/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_WebJarAssets_at21_invoker = createInvoker(
+  private[this] lazy val controllers_WebJarAssets_at16_invoker = createInvoker(
     WebJarAssets_7.at(fakeValue[String]),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -542,13 +448,13 @@ class Routes(
     // @LINE:18
     case controllers_ResetPasswordController_view9_route(params) =>
       call(params.fromPath[java.util.UUID]("token", None)) { (token) =>
-        controllers_ResetPasswordController_view9_invoker.call(ResetPasswordController_10.view(token))
+        controllers_ResetPasswordController_view9_invoker.call(ResetPasswordController_9.view(token))
       }
   
     // @LINE:19
     case controllers_ResetPasswordController_submit10_route(params) =>
       call(params.fromPath[java.util.UUID]("token", None)) { (token) =>
-        controllers_ResetPasswordController_submit10_invoker.call(ResetPasswordController_10.submit(token))
+        controllers_ResetPasswordController_submit10_invoker.call(ResetPasswordController_9.submit(token))
       }
   
     // @LINE:20
@@ -575,46 +481,16 @@ class Routes(
         controllers_ActivateAccountController_activate14_invoker.call(ActivateAccountController_0.activate(token))
       }
   
-    // @LINE:26
-    case controllers_Application_index15_route(params) =>
-      call { 
-        controllers_Application_index15_invoker.call(Application_9.index)
-      }
-  
-    // @LINE:27
-    case controllers_Application_shop16_route(params) =>
-      call { 
-        controllers_Application_shop16_invoker.call(Application_9.shop)
-      }
-  
-    // @LINE:28
-    case controllers_Application_blog17_route(params) =>
-      call { 
-        controllers_Application_blog17_invoker.call(Application_9.blog)
-      }
-  
-    // @LINE:29
-    case controllers_Application_learn18_route(params) =>
-      call { 
-        controllers_Application_learn18_invoker.call(Application_9.learn)
-      }
-  
-    // @LINE:30
-    case controllers_Application_videos19_route(params) =>
-      call { 
-        controllers_Application_videos19_invoker.call(Application_9.videos)
-      }
-  
     // @LINE:33
-    case controllers_Assets_at20_route(params) =>
+    case controllers_Assets_at15_route(params) =>
       call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
-        controllers_Assets_at20_invoker.call(Assets_5.at(path, file))
+        controllers_Assets_at15_invoker.call(Assets_5.at(path, file))
       }
   
     // @LINE:34
-    case controllers_WebJarAssets_at21_route(params) =>
+    case controllers_WebJarAssets_at16_route(params) =>
       call(params.fromPath[String]("file", None)) { (file) =>
-        controllers_WebJarAssets_at21_invoker.call(WebJarAssets_7.at(file))
+        controllers_WebJarAssets_at16_invoker.call(WebJarAssets_7.at(file))
       }
   }
 }

@@ -1,0 +1,11 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/home/myeong/workspace/Ampoule/server/conf/logback.xml,/home/myeong/workspace/Ampoule/server/target/scala-2.11/classes/logback.xml)[0m
+[0m[[0mdebug[0m] [0m	(/home/myeong/workspace/Ampoule/server/conf/messages.ko,/home/myeong/workspace/Ampoule/server/target/scala-2.11/classes/messages.ko)[0m
+[0m[[0mdebug[0m] [0m	(/home/myeong/workspace/Ampoule/server/conf/evolutions,/home/myeong/workspace/Ampoule/server/target/scala-2.11/classes/evolutions)[0m
+[0m[[0mdebug[0m] [0m	(/home/myeong/workspace/Ampoule/server/conf/application.conf,/home/myeong/workspace/Ampoule/server/target/scala-2.11/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/myeong/workspace/Ampoule/server/conf/routes,/home/myeong/workspace/Ampoule/server/target/scala-2.11/classes/routes)[0m
+[0m[[0mdebug[0m] [0m	(/home/myeong/workspace/Ampoule/server/conf/application.prod.conf,/home/myeong/workspace/Ampoule/server/target/scala-2.11/classes/application.prod.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/myeong/workspace/Ampoule/server/conf/messages,/home/myeong/workspace/Ampoule/server/target/scala-2.11/classes/messages)[0m
+[0m[[0mdebug[0m] [0m	(/home/myeong/workspace/Ampoule/server/conf/silhouette.conf,/home/myeong/workspace/Ampoule/server/target/scala-2.11/classes/silhouette.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/myeong/workspace/Ampoule/server/conf/evolutions/default,/home/myeong/workspace/Ampoule/server/target/scala-2.11/classes/evolutions/default)[0m
+[0m[[0mdebug[0m] [0m	(/home/myeong/workspace/Ampoule/server/conf/evolutions/default/1.sql,/home/myeong/workspace/Ampoule/server/target/scala-2.11/classes/evolutions/default/1.sql)[0m

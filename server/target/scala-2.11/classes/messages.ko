@@ -1,12 +1,13 @@
-project.name = 앙풀
+project.name = Ampoule 앙풀
 
 main.oneLineAd = 인터넷 쇼핑의 새로운 패러다임!! 앙풀!!
 
-main.topnav.shop = 쇼핑
-main.topnav.blog = 블로그
-main.topnav.learn = 운영진강좌
-main.topnav.videos = 동영상
+accessory = 인테리어소품
+stationary = 디자인문구
+flower = 드라이플라워
+styling = 실내연출
 
+for.more.convenience = 유용한 기능
 main.signin = 로그인
 main.signout = 로그아웃
 main.wishlists = 관심상품
