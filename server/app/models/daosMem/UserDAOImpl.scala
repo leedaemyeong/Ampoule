@@ -1,10 +1,10 @@
-package models.daos
+package models.daosMem
 
 import java.util.UUID
 
 import com.mohiva.play.silhouette.api.LoginInfo
 import models.User
-import models.daos.UserDAOImpl._
+import models.daosMem.UserDAOImpl._
 
 import scala.collection.mutable
 import scala.concurrent.Future

@@ -23,7 +23,7 @@ input:hover, input:focus {
 }
 
 fieldset {
-    margin-top: 100px;
+    margin-top: 0px;
 }
 legend {
     font-family: 'Montserrat', sans-serif;
@@ -138,4 +138,18 @@ meter[value="4"]::-moz-meter-bar { background: green; }
 
 meter::-webkit-meter-optimum-value {
     transition: width .4s ease-out;
+}
+
+.masthead {
+padding-top: 1px;
+padding-bottom: 15px;
+text-align: center;
+}
+
+.footer {
+text-align: center;
+}
+
+.very-top-nav {
+font-size: 0.5em;
 }

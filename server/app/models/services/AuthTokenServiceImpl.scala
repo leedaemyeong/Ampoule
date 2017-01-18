@@ -5,7 +5,7 @@ import javax.inject.Inject
 
 import com.mohiva.play.silhouette.api.util.Clock
 import models.AuthToken
-import models.daos.AuthTokenDAO
+import models.daosMem.AuthTokenDAO
 import org.joda.time.DateTimeZone
 import play.api.libs.concurrent.Execution.Implicits._
 

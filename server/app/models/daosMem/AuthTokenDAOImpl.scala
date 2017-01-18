@@ -1,9 +1,9 @@
-package models.daos
+package models.daosMem
 
 import java.util.UUID
 
 import models.AuthToken
-import models.daos.AuthTokenDAOImpl._
+import models.daosMem.AuthTokenDAOImpl._
 import org.joda.time.DateTime
 
 import scala.collection.mutable

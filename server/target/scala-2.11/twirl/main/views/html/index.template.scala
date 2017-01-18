@@ -26,60 +26,37 @@ Seq[Any](format.raw/*1.85*/("""
 
 """),_display_(/*3.2*/main("Ampoule for your beautiful life")/*3.41*/ {_display_(Seq[Any](format.raw/*3.43*/("""
 
-	"""),format.raw/*5.2*/("""<link rel="stylesheet" media="screen" href='"""),_display_(/*5.47*/routes/*5.53*/.Assets.at("stylesheets/carousel.css")),format.raw/*5.91*/("""'>
+"""),format.raw/*5.1*/("""<!-- Jumbotron -->
+<div class="jumbotron">
+  <h1>Marketing stuff!</h1>
+  <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
+  <p><a class="btn btn-lg btn-success" href="#" role="button">Get started today</a></p>
+</div>
 
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-          <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Example headline.</h1>
-              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div><!-- /.carousel -->
+<!-- Example row of columns -->
+<div class="row">
+  <div class="col-lg-4">
+    <h2>Safari bug warning!</h2>
+    <p class="text-danger">As of v9.1.2, Safari exhibits a bug in which resizing your browser horizontally causes rendering errors in the justified nav that are cleared upon refreshing.</p>
+    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+    <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+  </div>
+  <div class="col-lg-4">
+    <h2>Heading</h2>
+    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+    <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+  </div>
+  <div class="col-lg-4">
+    <h2>Heading</h2>
+    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+    <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+  </div>
+</div>
 
-""")))}),format.raw/*58.2*/("""
+
+
+
+""")))}),format.raw/*35.2*/("""
 """))
       }
     }
@@ -100,11 +77,11 @@ Seq[Any](format.raw/*1.85*/("""
 object index extends index_Scope0.index
               /*
                   -- GENERATED --
-                  DATE: Wed Nov 02 06:19:25 KST 2016
+                  DATE: Sun Jan 08 06:56:25 KST 2017
                   SOURCE: /home/myeong/workspace/Ampoule/server/app/views/index.scala.html
-                  HASH: 0e255943770e126a68faadf91b3d66546ff77156
-                  MATRIX: 556->1|734->84|762->87|809->126|848->128|877->131|948->176|962->182|1020->220|3959->3129
-                  LINES: 20->1|25->1|27->3|27->3|27->3|29->5|29->5|29->5|29->5|82->58
+                  HASH: 6191d7e6c061f1650d6af7037ff741cf29cc095f
+                  MATRIX: 556->1|734->84|762->87|809->126|848->128|876->130|2673->1897
+                  LINES: 20->1|25->1|27->3|27->3|27->3|29->5|59->35
                   -- GENERATED --
               */
           

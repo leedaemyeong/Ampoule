@@ -1,16 +1,16 @@
 [0m[[0minfo[0m] [0mFast optimizing /home/myeong/workspace/Ampoule/client/target/scala-2.11/client-fastopt.js[0m
-[0m[[0mdebug[0m] [0mLinker: Compute reachability: 147777 us[0m
-[0m[[0mdebug[0m] [0mLinker: Assemble LinkedClasses: 214477 us[0m
-[0m[[0mdebug[0m] [0mBasic Linking: 376237 us[0m
+[0m[[0mdebug[0m] [0mLinker: Compute reachability: 146446 us[0m
+[0m[[0mdebug[0m] [0mLinker: Assemble LinkedClasses: 202560 us[0m
+[0m[[0mdebug[0m] [0mBasic Linking: 369379 us[0m
 [0m[[0mdebug[0m] [0mInc. optimizer: Batch mode: true[0m
-[0m[[0mdebug[0m] [0mInc. optimizer: Incremental part: 149521 us[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: Incremental part: 159556 us[0m
 [0m[[0mdebug[0m] [0mInc. optimizer: Optimizing 790 methods.[0m
-[0m[[0mdebug[0m] [0mInc. optimizer: Optimizer part: 420332 us[0m
-[0m[[0mdebug[0m] [0mInc. optimizer: 581852 us[0m
-[0m[[0mdebug[0m] [0mRefiner: Compute reachability: 47328 us[0m
-[0m[[0mdebug[0m] [0mRefiner: Assemble LinkedClasses: 8878 us[0m
-[0m[[0mdebug[0m] [0mRefiner: 59738 us[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: Optimizer part: 428164 us[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: 598951 us[0m
+[0m[[0mdebug[0m] [0mRefiner: Compute reachability: 27630 us[0m
+[0m[[0mdebug[0m] [0mRefiner: Assemble LinkedClasses: 8677 us[0m
+[0m[[0mdebug[0m] [0mRefiner: 38397 us[0m
 [0m[[0mdebug[0m] [0mEmitter: Class tree cache stats: reused: 0 -- invalidated: 40[0m
 [0m[[0mdebug[0m] [0mEmitter: Method tree cache stats: resued: 0 -- invalidated: 103[0m
-[0m[[0mdebug[0m] [0mEmitter (write output): 183157 us[0m
+[0m[[0mdebug[0m] [0mEmitter (write output): 184117 us[0m
 [0m[[0mdebug[0m] [0mGlobal IR cache stats: reused: 0 -- invalidated: 6 -- trees read: 248[0m
